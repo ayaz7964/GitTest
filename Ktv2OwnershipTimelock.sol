@@ -80,7 +80,6 @@ contract Ktv2OwnershipTimelock is ReentrancyGuard {
         require(msg.sender == currentLock.originalOwner, "Not original owner");
         require(block.timestamp >= currentLock.unlockTime, "Not expired");
         
-
         
         Ownable(ktv2Contract).transferOwnership(owner);
         
