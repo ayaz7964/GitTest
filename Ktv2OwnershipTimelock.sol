@@ -38,7 +38,7 @@ contract Ktv2OwnershipTimelock is ReentrancyGuard {
         require(_ktv2Contract != address(0), "Invalid address");
         ktv2Contract = _ktv2Contract;
     }
-    
+    //llkklk
     /**
      * @notice Register caller as original owner
      * @dev Caller must be current Ktv2 owner and contract must not be frozen
